@@ -10,6 +10,9 @@ monthly calendar and also to view category wise.
 - For sending the data as per schema use your own unique userId in the request body , this userId will be used to GET/DELETE the event from the database.
 - No need to add a link it will be automatically generated
 
+- ### Additionaly added PM2 for process management for Deploying
+.
+
 ### Following details shall be included in the event model schema:
 
 - [x] eventName
@@ -50,5 +53,4 @@ monthly calendar and also to view category wise.
 - [x] DELETE /events/:userId/:eventId - eventController.deleteEventByUser
 
 
-### Additionaly added PM2 for process management 
 
