@@ -6,6 +6,10 @@ monthly calendar and also to view category wise.
 - [x] The technologies to be used are nodejs and mongodb
 - [x] The model schema for the above problem statement has to be defined.
 
+### Testing the API's
+- For sending the data as per schema use your own unique userId in the request body , this userId will be used to GET/DELETE the event from the database.
+- No need to add a link it will be automatically generated
+
 ### Following details shall be included in the event model schema:
 
 - [x] eventName
