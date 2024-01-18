@@ -12,8 +12,9 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
+
   "scripts": {
-    "test": "node index.js"
+    "start": "pm2-runtime start ecosystem.config.js --env production"
   },
   "author": "",
   "license": "ISC"
