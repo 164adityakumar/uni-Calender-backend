@@ -1,4 +1,5 @@
 const Event = require('../models/event.js');
+const generateRandomLink = require('../helper/meetLink.js');
 
 const eventController = {
   getAllEvents: async (req, res) => {
@@ -72,7 +73,11 @@ const eventController = {
   },
 
   createEvent: async (req, res) => {
-    const event = new Event(req.body);
+    const body = req.body;
+    const link = generateRandomLink();
+    console.log(link);
+    body.meetlink = link;
+    const event = new Event(body);
     try {
       const savedEvent = await event.save();
       res.json(savedEvent);
